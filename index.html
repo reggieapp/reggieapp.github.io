@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html class="no-js h-100" lang="en">
+<head>
+  
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ReggieTV - browser extension for Youtube livestreams to level up your chatting experience</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta http-equiv="cleartype" content="on">
+<meta name="author" content="biolithic">
+<meta name="copyright" content="biolithic 2023" />
+<meta name="apple-mobile-web-app-title" content="ReggieTV">
+<meta name="application-name" content="ReggieTV">
+<title>ReggieTV - browser extension for Youtube livestreams to level up your chatting experience</title>
+<meta name="description" content="ReggieTV - browser extension for Youtube livestreams to level up your chatting experience">
+
+<meta property="og:title" content="ReggieTV - browser extension for Youtube livestreams to level up your chatting experience" />
+<meta property="og:description" content="ReggieTV - browser extension for Youtube livestreams to level up your chatting experience" />
+<meta property="og:image" content="apple-touch-icon.png" />
+<meta property="og:url" content="https://reggieapp.github.io/">
+
+<meta property="twitter:title" content="ReggieTV - browser extension for Youtube livestreams to level up your chatting experience" />
+<meta property="twitter:description" content="ReggieTV - browser extension for Youtube livestreams to level up your chatting experience" />
+<meta property="twitter:image" content="apple-touch-icon.png" />
+<meta property="twitter:card" content="https://reggieapp.github.io">
+
+<meta name="msapplication-TileColor" content="#ff0000">
+<meta name="theme-color" content="#ff0000">
+
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="194x194" href="favicon-194x194.png">
+<link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#ff0000">
+<link rel="shortcut icon" type="image/x-icon" href="apple-touch-icon.png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+
+<link rel="canonical" href="https://reggieapp.github.io/">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/picnic">
+<style>
+nav {
+  background: #000;
+}
+
+nav .brand, nav .menu a.pseudo.button {
+  color: #555;
+}
+
+.splash {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;  
+  background: url(background.jpg);
+  text-align: center;
+  color: #ff0000;
+  padding-top: 4rem;
+  background-origin: content-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.splash button.success, .button {
+  background: #ff0000;
+}
+
+.content {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+footer.footer {
+  width: 100%;
+  height: 8rem;
+  background: #000;
+  color: #aaa;
+}
+
+footer.footer a {
+  color: #ff0000;
+}
+
+footer svg {
+  width: 3rem;
+}
+</style>
+</head>
+<body>
+
+<nav>
+   <a href="/" class="brand"><span>ReggieTV</span></a><input id="bmenu" type="checkbox" class="show"><label for="bmenu" class="burger toggle pseudo button">menu</label>
+   <div class="menu"><a href="#contact" class="button icon-file-code">Contact Us</a></div>
+</nav>
+      
+<main class="intro test">
+  
+  <div class="splash">
+    <h1>ReggieTV</h1>
+    <h3>Browser Extension for Youtube Livestream Chats</h3>
+    <h3>Empowering Streamers and Moderators since 2022!</h3>
+    <button class="success">Download 1.0.0 - 4/15/2023</button>
+  </div>
+
+  <div class="content">
+
+    <div>
+      <div class="tabs six">
+        
+        <input id="tabA-1" type="radio" name="tabgroupA" checked />
+        <label class="button toggle" for="tabA-1">Hello</label>
+        <input id="tabA-2" type="radio" name="tabgroupA" />
+        <label class="button toggle" for="tabA-2">Install/Support</label>
+        <input id="tabA-3" type="radio" name="tabgroupA" />
+        <label class="button toggle" for="tabA-3">Usage</label>
+        <input id="tabA-4" type="radio" name="tabgroupA" />
+        <label class="button toggle" for="tabA-4">Advanced Usage</label>
+        <input id="tabA-5" type="radio" name="tabgroupA" />
+        <label class="button toggle" for="tabA-5">Video Demos</label>
+        <input id="tabA-6" type="radio" name="tabgroupA" />
+        <label class="button toggle" for="tabA-6">FAQ</label>
+
+        <div class="row">
+          
+          <div class="tab">
+            <div>
+              <h2>Welcome to the ReggieTV documentation. <br />
+              Press a tab above to learn more. <br />
+              We suggest beginners start with Install/Support and continue to the right. 
+              </h2>
+              <p>
+              Please check out these featured streamers that are using ReggieTV!
+              </p>
+            </div>
+          </div>
+
+
+          <div class="tab">
+            <div>
+              <h2>Install/Support</h2>
+              <p>
+                
+                <p>ReggieTV is a web browser extension for desktop and Android for new, helpful features for using Youtube live streams.</p>
+                <p>It adds extra functionality to Youtube videos and livestreams which may be missing to you.</p>
+                <p>It can help you configure and search live stream chat to be more usable and useful to you.</p>
+
+                <h3>Installation for desktop/laptop</h3>
+                <ol>
+                  <li>download the zip file and upzip it</li>
+                  <li>open your web browser and at chrome://extensions/ (example address)</li>
+                  <li>click "Load Unpacked" and select the folder you just unzipped</li>
+                  <li>you should see Reggie 1.0.0 active on this screen.</li>
+                  <li>questions? look up installing browser extensions on Chrome, the process is the same for all.</li>
+                </ol>
+
+                <h3>Installation for mobile/phone</h3>
+                <ol>
+                  <li>this has only been tested on Android phones currently.</li>
+                  <li>use a Chrome-based browser which can use browser extensions like the Kiwi browser or Samsung browser.</li>
+                  <li>download the zip file</li>
+                  <li>open your web browser and at kiwi://extensions/ (example address)</li>
+                  <li>click "load zip/crx" and select the download you just saved</li>
+                  <li>you should see Reggie 1.0.0 active on this screen.</li>
+                  <li>questions? look up installing browser extensions on Android, the process is the same for all.</li>
+                </ol>
+
+                <h3>Why isn't this on the Chrome Web Store?</h3>
+                <p>We believe in the true open-source nature of this project and idea. Upon downloading, you or someone you trust can inspect the code for anything malicious. You can modify it to suit your needs. You or someone you know are probably smarter than I and can take this and improve upon it. This exists to be an open place of stream ideas in which people can add or subtract to and progress upon. With is as our motto, the best way seemingly to accomplish this is to provide it like this.</p>
+
+                <h3>Don't like it?</h3>
+                <p>If you do not like it, you can disable or uninstall it with no issues. All features can be turned on and off individually -- you choose which you want to use and how.</p>
+
+                <h3>Supported browsers</h3>
+                <p>Google Chrome, Brave Browser, Microsoft Edge, Vivaldi, Epic, Torch, Opera GX Gaming, Kiwi</p>
+
+                <h3>Does this work on iPhones, iPads, Windows Phones, Surfaces, Firefox, or something you haven't mentioned here?</h3>
+                <p>No, and it never will unless others do it.</p>
+
+                <h3>Support</h3>
+                <p>Support links can be found at the very bottom of this page.</p>
+
+                <h3>Creation</h3>
+                <p>This was written by a single person in the USA.</p>
+
+                <h3>Storage/tracking/security</h3>
+                <p>This extension saves information to your browser locally if you choose such as options/preferences you set, chat that you save, and browser version which you can export out to yourself via CSV file and is deleted when you uninstall the extension. We save none of your options/preferences "in the cloud" at this time.  We currently use no tracking or advertising or cookies at this time of 4/2023. This may change and you will be notified if it does. We are currently a very small team and do not have time or resources for large privacy policy scope or legal/public relations/social/customer service policy other than to provide the basic technical features needed to the streamers for their usage.</p>
+
+                <h3>Third Party Usage</h3>
+                <p>This currently does NOT make usage of any third-party software or libraries in 2023.</p>
+
+                <h3>Source/Funding</h3>
+                <p>This is currently funded/hosted 100% by the creator/developer, who is a person not associated with any live streaming or video/media company in any formal way. If this changes, we will update here.</p>
+
+                <h3>Version</h3>
+                <p>This is released under Google Chrome Manifest version 3 (2023) and may only work with browsers/operating systems updated in 2022 and beyond. This is released under GNU 3 license https://www.gnu.org/licenses/gpl-3.0.en.html. </p>
+
+                <h3>Usage and functionality</h3>
+                <p>This provides functionality that can be used via the TAB and ENTER keys on the keyboard, a pop-up menu which can be used via touch or mouse, voice commands, and keyboard keybind commands. Each of these can be turned on or off as requested.</p>
+
+
+              </p>
+            </div>
+          </div>
+
+          <div class="tab">
+            <div>
+              <h2>Usage</h2>
+              <p>
+                
+                <h3>Basic Usage on Youtube Videos:</h3>
+                <h5>View previously saved chat on past stream:</h5>
+                1a) watch a stream and save the chat using this extension <br />
+                1b) or have someone give you the exported chat file from a stream <br />
+                2a) load the video the chat is from. If it is the same video title, it should load automatically. <br />
+                2b) You can also manually import the chat to view on the side using this extension drop down menu. <br />
+
+                <h5>Timestamps on Youtube video comments</h5>
+                Play a video that has comments below it. <br />
+                If you see a comment with a timestamp in this format 2:15 or 02:15:30 click on it <br />
+                The video should fast-forward to the time in the video of the timestamp. <br />
+
+                <h5>Timestamp links on Youtube video comments</h5>
+                Visit a url like https://Youtube.com/v2l0p3x-steven-seagals-energy-drink.html?t=120 <br />
+                Play the video. <br />
+                The video should start playing at 120 seconds (2 minutes) in, fast-forwarding to the time in the video of the timestamp.<br />
+
+                <hr />
+
+                <h3>Basic Usage on Youtube LiveStreams:</h3>
+                <h5>Load an active livestream with chat on Youtube</h5>
+                if this is working, you will see loading messages pop up in the bottom right hand corner of the screen.<br />
+                in the top right corner of your browser, you will see either a puzzle piece icon or a red keyboard icon. Click on it.<br />
+                if puzzle piece, click on the pin icon next to the Reggie red keyboard icon.<br />
+                if you see the red keyboard icon, click on it to toggle the extension Main Menu.<br />
+
+                <h5>Main Menu</h5>
+                The menu with the icons the extension provides we will call the "Main Menu". This can be toggled in view or hidden. <br />
+                On desktop, the Main Menu toggles on the right side of the chat.<br />
+                On mobile, the Main Menu toggles below the video.<br />
+                The main menu provides access to the settings menu at its top, and different one-time chat toggle features below that. <br />
+                From top to bottom, here are the icons in the Main Menu and their actions:<br />
+
+                <ul>
+                <li>the cog activates the settings menu</li>
+                <li>the crown is to toggle broadcaster only chat or all chat</li>
+                <li>the wrench is to toggle moderator only chat or all chat</li>
+                <li>the money bag is to toggle supporter only chat or all chat</li>
+                <li>the money bag + wrench is to toggle supporter and moderator only chat or all chat</li>
+                <li>the dollar sign is to toggle supporter only chat or all chat</li>
+                <li>the @ sign is to toggle mention chat or all chat</li>
+                <li>the # sign is to toggle hashtag chat or all chat</li>
+                <li>the ab sign is to toggle text only chat or full chat (hide emojis, usernames, clutter)</li>
+                <li>the up arrow is to scroll to the top of the live chat</li>
+                <li>the down arrow is to scroll to the bottom of the live chat</li>
+                <li>the aA is to change the font size of chat</li>
+                <li>the * sign is to toggle full height and/or full weight of chat sidebar</li>
+                <li>the magnifying glass brings up the Search Menu to toggle searching of the current stream chat</li>
+                <li>the magnifying glass + brings up the Search Menu to toggle searching of all saved stream chats on this device from Youtube</li>
+                </ul>
+
+                <h5>Search Menu</h5>
+                Search Menu: When the magnifying glass is pressed, the search menu appears.<br />
+                <ul>
+                <li>When the search menu is active, the main menu icons work on the chat appearing in the search menu overlay</li>
+                <li>When the search menu is hidden, the main menu icons work on the chat appearing in the Youtube sidebar</li>
+                <li>When the search menu is active, type a phrase in the search bar.</li>
+                <li>The @ button will search saved chat for the phrase starting the message. Search for dog will find "dogs are cute" but NOT "your dog is cute."</li>
+                <li>The user button will search saved chat the user writing the message. Search for dog will find what the username dog wrote in the chat.</li>
+                <li>The abc button will search saved chat for the phrase in the message. Search for dog will find "dogs are cute" AND "your dog is cute."</li>
+                <li>The full button will find all saved messages you have saved from this chat so far.</li>
+
+                <h5>Settings Menu</h5>
+                Settings Menu: Press the cog icon in the main menu to open the options menu. The Settings Menu is divided into these sections:
+
+                <ul>
+                <li>Theme</li>
+                <li>Highlight</li>
+                <li>Mute/Dim</li>
+                <li>Hide</li>
+                <li>Features</li>
+                <li>Saved Chats</li>
+                <li>Import Chats</li>
+                <li>Share</li>
+                </ul>
+
+                <select>
+                  <option>Theme ↓ (you can change)</option>
+                  <option>background color of chat</option>
+                  <option>user name color in chat</option>
+                  <option>chat color of highlighted chats</option>
+                  <option>message color in chat</option>
+                  <option>font size in chat</option>
+                  <option>text only chat</option>
+                </select>
+<hr>
+                <select>
+                  <option>Highlight ↓ (you can change)</option>
+                  <option>highlight sub messages in this color</option>
+                  <option>highlight moderator messages color in this color</option>
+                  <option>highlight @ mention messages color in this color</option>
+                  <option>highlight hashtag messages color in this color</option>
+                  <option>highlight VIP messages in this color and larger font</option>
+                  <option>personal VIP List </option>
+                  <option>highlight these words in chat in larger font</option>
+                </select>
+<hr>
+                <select>
+                  <option>Mute/Dim ↓ (you can change)</option>
+                  <option>mute non moderator/sub messages in chat</option>
+                  <option>mute owner/streamer messages in chat</option>
+                  <option>mute @ mention messages in chat</option>
+                  <option>mute bot messages/commands in chat</option>
+                  <option>mute follow alert messages in chat</option>
+                  <option>mute subscribe alert messages in chat</option>
+                </select>
+<hr>
+                <select>
+                  <option>Hide ↓ (you can change)</option>
+                  <option>hide non moderator/sub messages in chat</option>
+                  <option>hide owner/streamer messages in chat</option>
+                  <option>hide @ mention messages in chat</option>
+                  <option>hide bot/command messages in chat </option>
+                  <option>hide follow alert messages in chat</option>
+                  <option>hide subscribe alert messages in chat</option>
+                  <option>hide these words in chat</option>
+                  <option>hide chats from these usernames in chat hide website links in chat</option>
+                  <option>hide usernames on screen chat</option>
+                </select>
+<hr>
+                <select>
+                  <option>Features ↓ (you can change)</option>
+                  <option>turn on basic keybinds for chat commands</option>
+                  <option>turn on full keybinds for chat commands</option>
+                  <option>turn on saving/logging of stream chat</option>
+                  <option>turn on showing stream chat over top of the video</option>
+                  <option>turn on voice commands turn on auto-saving of chat turn on auto-showing of chat on screen</option>
+                  <option>left handed chat </option>
+                  <option>upside down chat </option>
+                  <option>mouseover enlarge chat </option>
+                  <option>font size turn on press @ in chat to bring up a mention menu</option>
+                  <option>press on chat messages to mention that user in chat</option>
+                </select>
+
+                <h5>Saved Chats</h5>
+                This tab keeps the saved chats on your device for you to view at any time, export out or delete.<br />
+
+                <h5>Import Chats</h5>
+                This tab you can import chat csv files to view on your device.<br />
+                
+                <h5>Share</h5>
+                This tab you can build your own share menu for your device to use.<br />
+
+              </p>
+            </div>
+          </div>
+
+          <div class="tab">
+            <div>
+              <h2>Advanced Usage</h2>
+              <p>
+                
+                <h3>FEATURES EXPLAINED IN DEPTH</h3>
+
+<h5>Basic Keybinds</h5>
+By turning on this feature...<br />
+You can start using ALT+1, ALT+2, ALT+3, ALT+4 for controlling chat and screen commands on your desktop/laptop.<br />
+This is not recommended while gaming and streaming on same keyboard.<br />
+
+<h5>Full Keybinds</h5>
+By turning on this feature...<br />
+You can start using ALT+A, ALT+S, etc... for controlling chat and screen commands on your desktop/laptop <br />
+This is not recommended while gaming and streaming on same keyboard. <br />
+
+<h5>Voice Commands</h5>
+By turning on this feature...<br />
+In the desktop/laptop Google Chrome version of the extension, you can test out using voice commands for controlling chat and screen commands<br />
+This is not recommended while gaming and streaming on same keyboard. <br />
+
+<h5>Auto-Saving Chat</h5>
+By turning on this feature...<br />
+Chat is automatically logged/saved to this device (in the browser) as it displays on a live stream, so you can read it back later.<br />
+This uses some computer memory, so if you are lagging, turn this off to save memory. <br />
+
+<h5>Auto-Showing Chat</h5>
+By turning on this feature...<br />
+Chat is automatically displayed over the video on a live stream instead of on the sidebar. <br />
+This uses some computer memory, so if you are lagging, turn this off to save memory. <br />
+
+<h5>Left Handed Chat</h5>
+Chat is on the left side of the video instead of the right side. <br />
+
+<h5>Upside Down Chat</h5>
+Chat is displayed newest at the top, oldest at the bottom. This is instead of the current "flow down" chat. <br />
+
+<h5>Mouseover</h5>
+When you place your mouse cursor over the chat or emojis, they enlarge in size so that you can see them better. <br />
+
+              </p>
+            </div>
+          </div>
+
+          <div class="tab">
+            <div>
+              <h2>Video Demos</h2>
+              <p>
+                Coming soon...
+              </p>
+            </div>
+          </div>
+
+          <div class="tab">
+            <div>
+              <h2>FAQ</h2>
+              <p>
+                Coming soon...
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+<footer class="footer" id="contact">
+  <small><a href='https://beacons.ai/ReggieTV' target='_blank'>Contact Us Beacons.AI</a> -- </small>
+  <small><a href='https://linktr.ee/ReggieTV' target='_blank'>Contact Us Linktree</a> -- </small>
+
+  <small>Contact Us/Submit Issues/Request Ideas on: </small>
+<a href='https://twitter.com/reggieapptv' target='_blank'>
+<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+</a>
+
+<a href='https://discord.gg/vQXKJkQWNd' target='_blank'>
+<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord" class="svg-inline--fa fa-discord " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"></path></svg>
+</a>
+
+<a href='https://github.com/reggieapp/reggie' target='_blank'>
+<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</a><br />
+
+  <small>This is a independent entity not connected, associated by, owned in part, or funded with or by Youtube.com or any parent company. This is a independent entity not connected, associated by, owned in part, or funded with or by any political party, political entity or elected official. Photo by <a href="https://unsplash.com/@jenrielzany?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Zany Jadraque</a> on <a href="https://unsplash.com/photos/YLdC7qO9M3g?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></small>
+  <small>This page and content and extension copyright <a href='https://linktr.ee/biolithic' target='_blank'>biolithic</a> 2023. All Rights Reserved.</small>
+  <small><a href='tos.html' target='_blank'>Terms of Service</a></small>
+  <small><a href='privacypolicy.html' target='_blank'>Privacy Policy</a></small>
+</footer>
+
+</main>
+</body></html>
