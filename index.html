@@ -135,8 +135,17 @@ footer svg {
               Press a tab above to learn more. <br />
               We suggest beginners start with Install/Support and continue to the right. 
               </h2>
+              <figure>
+                <img src="desktop.png" class="example" alt="What ReggieTV looks like on a Youtube live stream on a laptop" />
+                <figcaption>What ReggieTV looks like on a Youtube live stream on a laptop 4/15/23. <br />We are not associated with this channel, this is a typical example stream on Youtube. <br /> Thank you to Lightning Farron and check them out if you like this. </figcaption>
+              </figure>
+              <hr />
+              <figure>
+                <img src="mobile.png" class="example" alt="What ReggieTV looks like on a Rumble live stream on a mobile phone" />
+                <figcaption>What ReggieTV looks like on a Youtube live stream on a mobile phone 4/15/23. <br />We are not associated with this channel, this is a typical example stream on Youtube. <br />Thank you to Lightning Farron and check them out if you like this.</figcaption>
+              </figure>
               <p>
-              Please check out these featured streamers that are using ReggieTV!
+              Please check out these featured streamers below that are using ReggieTV!
               </p>
             </div>
           </div>
@@ -410,7 +419,16 @@ When you place your mouse cursor over the chat or emojis, they enlarge in size s
             <div>
               <h2>Video Demos</h2>
               <p>
-                Coming soon...
+                
+                Take a look at it in action from 4/15/23. <br />
+                In this video, we open the settings menu and customize our stream setup in real time with a couple of the features. <br />
+                We are not associated with this channel, this is a typical example stream on Youtube. <br /> 
+                Thank you to Vara Dark and check them out if you like this. <br />
+                <button id="loadVideo" onClick="load_video();">Load Demo Video</button><br />
+                <video id="video" controls>
+                    <source id="videoFile" type="video/webm" />
+                </video>
+
               </p>
             </div>
           </div>
@@ -457,4 +475,15 @@ When you place your mouse cursor over the chat or emojis, they enlarge in size s
 </footer>
 
 </main>
+
+<script>
+function load_video() {
+  var video = document.getElementById('video');
+  var videoFile = document.getElementById('videoFile');
+  var d = new Date();
+  videoFile.src = "reggiedemo.webm";
+  video.load();
+  video.play();
+}
+</script>
 </body></html>
